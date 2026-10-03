@@ -942,7 +942,7 @@ elif menu == "Contact Us":
 
 
         st.write(
-            "📧 sweetcakes@example.com"
+            "📧 palanisamuelmanojdeee054@gmail.com"
         )
 
 
