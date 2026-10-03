@@ -223,26 +223,25 @@ def set_home_background():
         image_path.read_bytes()
     ).decode()
 
-
     # Apply background
     st.markdown(
         f"""
         <style>
 
         .stApp {{
-
-            background-image:
-                url(
-                    "data:image/png;base64,{image_data}"
-                );
-
+            background-image: url("data:image/png;base64,{image_data}");
             background-size: cover;
-
             background-position: center center;
-
             background-repeat: no-repeat;
+            background-attachment: scroll;
+        }}
 
-            background-attachment: fixed;
+        @media (max-width: 768px) {{
+            .stApp {{
+                background-size: cover;
+                background-position: center center;
+                background-attachment: scroll;
+            }}
         }}
 
         </style>
